@@ -57,5 +57,8 @@ public class Prueba {
 		bitset2.set(2,'2');
 	}
 	
-	
+	@Test
+	public void testToString(){
+		assertEquals(" 1010", bitset1.toString());
+	}
 }
