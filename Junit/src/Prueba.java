@@ -52,5 +52,10 @@ public class Prueba {
 		}
 	}
 	
+	@Test(expected = BinaryStringException.class)
+	public void testInvalidBitValue(){
+		bitset2.set(2,'2');
+	}
+	
 	
 }

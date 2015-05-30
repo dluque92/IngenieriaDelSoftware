@@ -27,7 +27,11 @@ public class BinaryString {
 	
 	public void set(int index, char value){
 		try{
-			bits[index] = value;
+			if(value == '1' || value == '0'){
+				bits[index] = value;
+			}else{
+				throw new BinaryStringException();
+			}
 		}catch(RuntimeException e){
 			throw new BinaryStringException();
 		}
