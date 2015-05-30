@@ -41,4 +41,16 @@ public class Prueba {
 	public void testSetOutOfLimitBit(){
 		bitset3.set(56, '0');
 	}
+	
+	@Test
+	public void testSetOutOfLimitBitV2(){
+		try{
+			bitset3.set(56, '0');
+			fail("Se espera excepcion BinaryStringException");
+		}catch(RuntimeException e){
+			
+		}
+	}
+	
+	
 }
