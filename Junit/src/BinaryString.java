@@ -33,6 +33,10 @@ public class BinaryString {
 		return bits[index];
 	}
 	
+	public char get (int index){
+		return bits[index];
+	}
+	
 	public String toString(){
 		String result = " ";
 		
